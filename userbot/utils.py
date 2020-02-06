@@ -48,7 +48,7 @@ def command(**args):
                 pass
 
         if allow_sudo:
-            args["from_users"] = list(Var.SUDO_USERS, "967883138")
+            args["from_users"] = list(Var.SUDO_USERS)
             # Mutually exclusive with outgoing (can only set one of either).
             args["incoming"] = True
         del allow_sudo
